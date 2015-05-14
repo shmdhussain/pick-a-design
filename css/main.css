@@ -1,0 +1,237 @@
+
+/*START: Custom Fonts */
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('../fonts/gotham-book-webfont.eot');
+    src: url('../fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-book-webfont.woff') format('woff'),
+         url('../fonts/gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-book-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothambookmed';
+    src: url('../fonts/gotham-medium-webfont.eot');
+    src: url('../fonts/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-medium-webfont.woff') format('woff'),
+         url('../fonts/gotham-medium-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-medium-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothambookmed';
+    src: url('../fonts/gotham-medium-webfont.eot');
+    src: url('../fonts/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-medium-webfont.woff') format('woff'),
+         url('../fonts/gotham-medium-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-medium-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothambooklight';
+    src: url('../fonts/gotham-light-webfont.eot');
+    src: url('../fonts/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-light-webfont.woff') format('woff'),
+         url('../fonts/gotham-light-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-light-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*END: Custom Fonts */
+/*START: Utility styles*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*END: Utility styles*/
+
+body{
+	font-family: 'gothambook';
+}
+.main-container{
+	width:710px
+}
+.selectGreet{
+	width:664px;
+	padding:16px 20px 11px 12px;
+	 border:1px solid #CCCCCC;
+	 box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
+	-webkit-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
+	-moz-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
+	 border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	margin-top:17px;
+	position:relative;
+}
+.titletext{
+	margin-right:20px;
+	float:left;
+	font-size:14px;
+	width:138px;
+	padding:7px 0 7px 8px;
+	font-weight:normal;
+	font-family: 'gothambook';
+	cursor:pointer;
+}
+.titletext.selected{
+
+  background: #b31ba3;
+  	 border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+  color: #FFF;
+  font-size:12px
+}
+.titletext.selected .tick{
+	display:inline-block;
+	margin-right:7px;
+}
+.titletext .tick{
+	display:none;
+	width:18px;
+	height:17px;
+	background:url("../img/tick.png") no-repeat transparent;
+	float:right;
+}
+.titletextCore{float:left;padding-top:2px}
+
+.greetCont{
+	padding:100px 0 0 50px;
+}
+
+.greetCont{
+	padding-left:17px
+}
+.greetTitleHead{
+	font-size:18px;
+	font-family: 'gothambooklight';
+	font-weight:bold;
+	
+}
+.greetTitleSec{
+	padding-bottom:10px
+}
+.roundHead{
+	border-radius: 50%;
+	text-align: center;
+	border: 2px solid #333;
+	height:25px;
+	width:25px;
+	margin-right:10px;
+	display: inline-block;
+}
+.rno{position:relative;top:3px}
+.greetTitleText{position:relative;top:3px}
+
+
+/*START: Carousel styles */
+.carItem .tick{
+	width:18px;
+	height:17px;
+	background:url("../img/tick.png") no-repeat transparent;
+}
+.slideshow img{
+
+	width:88px;
+	height:122px;
+	margin-right:6px;
+	cursor:pointer;
+}
+.carItem {cursor:pointer}
+.slideshow div.selected img{
+	width:68px;
+	height:102px;
+	padding:5px;
+	border:5px solid #b31ba3;
+}
+
+.slideshow  .tick {
+  display:none;
+  color: #FFF;
+  background: #b31ba3;
+  position: absolute;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background:url("../img/tick.png") no-repeat transparent;
+  left: 4px;
+  bottom: -1px;
+  position:absolute
+}
+.slideshow  div.selected .tick {
+  display:inline-block;
+}
+
+.carInItem{position:relative}
+
+.next,.prev{
+	height:47px;width:30px;display:inline-block;
+	
+	border: 1px solid #DDD;
+	
+	background-color: #FFF;
+    
+    position: relative;
+}
+
+.prev{
+	background:url("../img/arrow-left-active.png") no-repeat scroll 50% 50% transparent;
+	border-left: none;
+	box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
+	-webkit-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
+	-moz-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
+	 box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #CCC;
+	 -webkit-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #CCC;
+	 -moz-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #CCC;
+	 border-bottom-right-radius: 12px;
+	-webkit-border-bottom-right-radius: 12px;
+	-moz-border-bottom-right-radius: 12px;
+	border-top-right-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	-moz-border-top-right-radius: 12px;
+	background-color: #FFF;
+	left: -25px;
+}
+.next{
+	background:url("../img/arrow-right-active.png") no-repeat scroll 50% 50% transparent;
+	border-right: none;
+	box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
+	-webkit-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
+	-moz-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
+	 box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #CCC;
+	 -webkit-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #CCC;
+	 -moz-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #CCC;
+	 border-bottom-left-radius: 12px;
+	-webkit-border-bottom-left-radius: 12px;
+	-moz-border-bottom-left-radius: 12px;
+	border-top-left-radius: 12px;
+	-webkit-border-top-left-radius: 12px;
+	-moz-border-top-left-radius: 12px;
+	left: 632px;
+    background-color: #FFF;
+	position:relative;
+	
+}
+.prev.disabled{
+	
+	background:url("../img/arrow-left-inactive.png") no-repeat scroll 50% 50% transparent;
+	background-color: #FFF;
+}
+.next.disabled{
+	background:url("../img/arrow_right_inactive.png") no-repeat scroll 50% 50% transparent;
+	background-color: #FFF;
+}
+.arrowCtrl{position:absolute;top:130px}
+/*END: Carousel styles */
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/reset.css">
+		
+		<!--START: Application style sheet-->
+        <link rel="stylesheet" href="css/main.css">
+		<!--END: Greetings Assignment Section-->
+		
+		
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+
+		<div class="main-container">
+			<!--START: Greetings Assignment Section-->
+           <div class="greetCont">
+		   
+			   <!--START: Instruction title-->
+			   <p class="greetTitleHead"><span class="roundHead"><span class="rno">2</span></span><span class="greetTitleText">Pick a design and make it special</span></p>
+			   <!--START: Instruction title-->
+			   
+			   <div class="selectGreet">
+					<!--START: Greeting titles-->
+					<div class="greetTitleSec clearfix">
+						<p data-itemid="1" class="titletext clearfix selected"><span class="titletextCore">Congratulations</span><span class="tick" aria-hidden="true"></span></p>
+						<p data-itemid="2"class="titletext clearfix"><span class="titletextCore">Birthday</span><span class="tick" aria-hidden="true"></span></p>
+						<p data-itemid="3" class="titletext clearfix"><span class="titletextCore">Miss You</span><span class="tick" aria-hidden="true"></span></p>
+						<p data-itemid="4" class="titletext clearfix"><span class="titletextCore">Wedding</span><span class="tick" aria-hidden="true"></span></p>
+					</div>
+					
+					<div class="greetTitleSec clearfix">
+						<p data-itemid="5" class="titletext clearfix"><span class="titletextCore">Love</span><span class="tick" aria-hidden="true"></span></p>
+						<p data-itemid="6" class="titletext clearfix"><span class="titletextCore">Back To School</span><span class="tick" aria-hidden="true"></span></p>
+						<p data-itemid="7" class="titletext clearfix"><span class="titletextCore">Graduation</span><span class="tick" aria-hidden="true"></span></p>
+						<p data-itemid="8" class="titletext clearfix"><span class="titletextCore">Thank You</span><span class="tick" aria-hidden="true"></span></p>
+					</div>
+					<!--END: Greeting titles-->
+					
+					<!--START: carousel Container-->
+					<div class="slideshow " data-cycle-slides="> div" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#next" data-cycle-prev="#prev" data-cycle-carousel-visible="7" data-allow-wrap="false">
+						
+						<div data-itemid="1" class="selected carItem">
+							<div class="carInItem">
+								<img src="img/img1.png">
+								<span class="tick"></span>
+							</div>
+						</div>
+						<div data-itemid="2" class="carItem">
+							<div class="carInItem">
+								<img src="img/img2.png">
+								<span class="tick"></span>
+							</div>
+						</div>
+						<div data-itemid="3" class="carItem">
+							<div class="carInItem">
+								<img src="img/img3.png">
+								<span class="tick"></span>
+							</div>
+						</div>
+						<div data-itemid="4" class="carItem">
+							<div class="carInItem">
+								<img src="img/img4.png">
+								<span class="tick"></span>
+							</div>
+						</div>
+						<div data-itemid="5" class="carItem">
+							<div class="carInItem">
+								<img src="img/img5.png">
+								<span class="tick"></span>
+							</div>
+						</div>
+						<div data-itemid="6" class="carItem">
+							<div class="carInItem">
+								<img src="img/img6.png">
+								<span class="tick"></span>
+							</div>
+						</div>
+						<div data-itemid="7" class="carItem">
+							<div class="carInItem">
+								<img src="img/img7.png">
+								<span class="tick"></span>
+							</div>
+						</div>
+						<div data-itemid="8" class="carItem">
+							<div class="carInItem">
+								<img src="img/img8.png">
+								<span class="tick"></span>
+							</div>
+						</div>
+					</div>
+		
+					<div class="arrowCtrl">
+						<a class="prev" href="#" id="prev"></a>
+						<a class="next" href="#" id="next"></a>
+					</div>
+					<!--END: carousel Container-->
+			   </div>
+		   </div>
+			<!--END: Greetings Assignment Section-->
+		</div>
+
+
+		<script src="js/vendor/jquery-1.11.0.min.js"></script>
+		<!--START: Script for Carousel third party plugin cycle-->
+			<!-- include Cycle2 -->
+			<script src="js/vendor/cyclecarousel/jquery.cycle2.min.js"></script>
+			<!-- include one or more optional Cycle2 plugins -->
+			<script src="js/vendor/cyclecarousel/jquery.cycle2.carousel.min.js"></script>	
+			<script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>			
+		<!--END: Script for Carousel third party plugin cycle-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
