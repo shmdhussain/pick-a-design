@@ -1,5 +1,15 @@
 (function($){
 
+/* console shim*/
+(function () {
+    var f = function () {};
+    if (!window.console) {
+        window.console = {
+            log:f, info:f, warn:f, debug:f, error:f
+        };
+    }
+}());
+
 
 $(function(){
 
@@ -16,6 +26,7 @@ $(function(){
 			$(".carItem").removeClass('selected');
 			$(".carItem").eq(itemid+1).addClass('selected');
 			$('.slideshow').cycle('goto', itemid);
+			
 		}
 	});
 
