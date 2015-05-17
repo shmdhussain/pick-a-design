@@ -63,7 +63,7 @@ body{
 }
 .selectGreet{
 	width:664px;
-	padding:16px 20px 11px 12px;
+	padding:11px 20px 11px 12px;
 	 border:1px solid #CCCCCC;
 	 box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
 	-webkit-box-shadow: 2px 4px 8px -3px rgba(50, 50, 50, 0.4), 0 -5px 5px -7px #000000;
@@ -71,7 +71,7 @@ body{
 	 border-radius: 10px 10px 10px 10px;
 	-webkit-border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
-	margin-top:17px;
+	margin-top:16px;
 	position:relative;
 }
 .titletext{
@@ -120,7 +120,10 @@ body{
 	
 }
 .greetTitleSec{
-	padding-bottom:10px
+	padding-bottom:0px
+}
+.greetTitleCont{
+	padding-bottom:10px;
 }
 .roundHead{
 	border-radius: 50%;
@@ -128,7 +131,7 @@ body{
 	border: 2px solid #333;
 	height:25px;
 	width:25px;
-	margin-right:10px;
+	margin-right:8px;
 	display: inline-block;
 }
 .rno{position:relative;top:3px}
@@ -232,6 +235,6 @@ body{
 	background:url("../img/arrow_right_inactive.png") no-repeat scroll 50% 50% transparent;
 	background-color: #FFF;
 }
-.arrowCtrl{position:absolute;top:130px}
+.arrowCtrl{position:absolute;top:116px}
 /*END: Carousel styles */
 
